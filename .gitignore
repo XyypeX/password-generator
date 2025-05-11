@@ -1,1 +1,9 @@
-node_modules/\ndist/\n.env\n
+node_modules/
+.DS_Store
+dist/
+.env
+*.log
+*.tmp
+*.bak
+database/*.db
+coverage/
