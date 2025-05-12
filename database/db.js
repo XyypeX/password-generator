@@ -1,4 +1,3 @@
-cat > database/db.js << 'EOF'
 const sqlite3 = require("sqlite3").verbose();
 const path = require("path");
 
@@ -40,7 +39,7 @@ class Database {
 
   getHistory(limit = 10) {
     return new Promise((resolve, reject) => {
-      const sql = SELECT password FROM passwords ORDER BY id DESC LIMIT ?;
+      const sql = "SELECT password FROM passwords ORDER BY id DESC LIMIT ?";
       this.db.all(sql, [limit], (err, rows) => {
         if (err) reject(err);
         else resolve(rows);
