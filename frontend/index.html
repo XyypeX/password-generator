@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Генератор паролей</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Генератор паролей</h1>
+
+    <div class="controls">
+      <div class="length-control">
+        <label>Длина пароля: <span id="length-value">12</span></label>
+        <input type="range" id="length" min="4" max="32" value="12" />
+      </div>
+
+      <div class="options">
+        <label><input type="checkbox" id="uppercase" checked /> Заглавные буквы</label>
+        <label><input type="checkbox" id="lowercase" checked /> Строчные буквы</label>
+        <label><input type="checkbox" id="numbers" checked /> Цифры</label>
+        <label><input type="checkbox" id="symbols" /> Спецсимволы</label>
+      </div>
+
+      <button id="generate">Сгенерировать пароль</button>
+    </div>
+
+    <div class="result">
+      <input type="text" id="password" readonly />
+      <button id="copy">Копировать</button>
+    </div>
+
+    <div class="strength-container">
+      <div class="strength-meter">
+        <div class="strength-bar" id="strength-bar"></div>
+      </div>
+      <div class="strength-text" id="strength-text">Надёжность: средняя</div>
+    </div>
+
+    <h2>История паролей</h2>
+    <ul id="history-list" class="history-list"></ul>
+  </div>
+
+  <script src="../backend/controller.js"></script>
+</body>
+</html>
