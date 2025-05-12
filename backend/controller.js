@@ -67,7 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     strengthBar.style.width = width;
     strengthBar.style.backgroundColor = color;
-    strengthText.textContent = Надёжность: ${text};
+    strengthText.textContent = `Надёжность: ${text}`;
+
   };
 
   const loadHistory = async () => {
