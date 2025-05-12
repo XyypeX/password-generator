@@ -22,6 +22,7 @@
 Установка и запуск
 Клонируйте репозиторий:
 git clone git@github.com:XyypeX/password-generator.git
+git checkout develop
 cd password-generator
 Установите зависимости:
 npm install
