@@ -4,5 +4,17 @@
   "main": "main.js",
   "scripts": {
     "start": "electron ."
+  },
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^36.2.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.2.2"
   }
 }
